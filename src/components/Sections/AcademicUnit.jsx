@@ -1,7 +1,6 @@
-import React from 'react'
-import department from "../assets/department.png";
-import excellence from "../assets/excellence.png";
-import medal from "../assets/medal.png";
+import department from "../../assets/department.png";
+import excellence from "../../assets/excellence.png";
+import medal from "../../assets/medal.png";
 
 export default function AcademicUnit() {
     return (
