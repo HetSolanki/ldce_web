@@ -1,6 +1,7 @@
 import g8 from "../../assets/g8.jpeg"
 
 
+
 export default function Footer() {
     return (
         <div style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${g8})` }} className='w-full bg-no-repeat bg-center bg-cover text-white'>

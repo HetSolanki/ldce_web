@@ -1,4 +1,3 @@
-
 export default function Important() {
     return (
         <div className='flex mt-48 flex-col items-center sm:flex-row lg:mt-0 sm:items-start sm:justify-center gap-4' >
@@ -15,7 +14,7 @@ export default function Important() {
                         {"->"} B.E. programs- Rubber Technology and Computer Engineering accredited by NBA for three years
                     </p>
                 </div>
-                <button className='bg-red-600 hover:bg-red-800 p-1 w-26 rounded float-end text-white'>More &gt;</button>
+                <button className='bg-red-600 hover:bg-red-800 p-1 w-26 rounded float-end text-white'>More &gt;</button>                
             </div>
             <div className='w-full sm:w-5/12 p-4'>
                 <h3 className='text-3xl font-semibold mb-2 text-red-600'>About LDCE</h3>

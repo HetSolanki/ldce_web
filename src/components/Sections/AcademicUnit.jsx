@@ -2,6 +2,7 @@ import department from "../../assets/department.png";
 import excellence from "../../assets/excellence.png";
 import medal from "../../assets/medal.png";
 
+
 export default function AcademicUnit() {
     return (
         <div className='flex bg-blue-100 justify-center py-10'>

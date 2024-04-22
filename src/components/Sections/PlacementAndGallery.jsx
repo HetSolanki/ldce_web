@@ -1,6 +1,7 @@
 import { g1, g2, g3, g4, g5, g6, g7, g8, g9 } from "../../assets/supply";
 
 
+
 export default function PlacementAndGallery() {
     return (
         <div className='w-full px-5'>
@@ -21,7 +22,6 @@ export default function PlacementAndGallery() {
                     </div>
                     <button className='flex items-center bg-red-600 hover:bg-red-800 py-1 px-5 rounded float-end text-white'>More &gt;</button>
                 </div>
-
                 <div className='w-full md:w-2/6 p-4'>
                     <h3 className='text-3xl font-semibold mb-4 text-red-600'>GALLERY</h3>
 
