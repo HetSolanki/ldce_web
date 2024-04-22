@@ -33,7 +33,7 @@ export default function HeroSection() {
           backgroundPosition: "center",
         }}
       >
-        <div className="w-screen h-screen bg-black/50 p-10 sm:p-[2rem]">
+        <div className="h-screen bg-black/50 p-10 sm:p-[2rem]">
           <Header />
           <Navbar />
           <button
