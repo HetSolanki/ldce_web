@@ -1,4 +1,3 @@
-import React from 'react'
 import g8 from "../assets/g8.jpeg"
 
 

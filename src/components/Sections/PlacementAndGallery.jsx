@@ -1,4 +1,3 @@
-import React from 'react'
 import { g1, g2, g3, g4, g5, g6, g7, g8, g9 } from "../assets/supply";
 
 
@@ -11,23 +10,23 @@ export default function PlacementAndGallery() {
                     <h3 className='text-3xl text-red-600 font-semibold mb-4'>PLACEMENTS</h3>
                     <div className='w-full'>
                         <p className='flex items-center mb-2 border-b-2 border-red-600 text-lg sm:text-xl md:text-2xl font-medium cursor-pointer'>
-                            <span class="material-symbols-outlined mb-0">
+                            <span className="material-symbols-outlined mb-0">
                                 arrow_forward
                             </span> Placement Cell Brochure
                         </p>
                         <p className='flex items-center mb-2 border-b-2 border-red-600 text-lg sm:text-xl md:text-2xl font-medium cursor-pointer'>
-                            <span class="material-symbols-outlined">
+                            <span className="material-symbols-outlined">
                                 arrow_forward
                             </span> Placement Cell Activities
                         </p>
                         <p className='flex items-center mb-2 border-b-2 border-red-600 text-lg sm:text-xl md:text-2xl font-medium cursor-pointer'>
-                            <span class="material-symbols-outlined">
+                            <span className="material-symbols-outlined">
                                 arrow_forward
                             </span> Facilities For Placement Drive at LDCE
                         </p>
                     </div>
                     <button className='flex items-center bg-red-600 hover:bg-red-800 py-1 px-5 rounded float-end text-white'>More   
-                    <span class="material-symbols-outlined ps-2 text-sm">
+                    <span className="material-symbols-outlined ps-2 text-sm">
                         arrow_forward_ios
                     </span></button>
                 </div>

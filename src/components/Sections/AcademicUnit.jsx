@@ -1,4 +1,3 @@
-import React from 'react'
 import department from "../assets/department.png";
 import excellence from "../assets/excellence.png";
 import medal from "../assets/medal.png";

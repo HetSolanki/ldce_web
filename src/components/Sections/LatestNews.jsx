@@ -1,4 +1,3 @@
-import React from 'react'
 import news from "../assets/news.jpeg"
 
 export default function LatestNews() {
@@ -9,7 +8,7 @@ export default function LatestNews() {
                 <div className='flex justify-center md:justify-normal items-end gap-5 mb-3'>
                     <h3 className='text-2xl sm:text-3xl md:text-4xl text-red-600 font-semibold h-full mb-0'>LATEST NEWS</h3>
                     <button className='flex items-center justify-center text-center bg-red-600 hover:bg-red-800 w-16 text-sm sm:w-24 h-7 px-2 rounded text-white mb-1'>More 
-                    <span class="material-symbols-outlined text-sm ps-1">
+                    <span className="material-symbols-outlined text-sm ps-1">
                         arrow_forward_ios
                     </span></button>
                 </div>

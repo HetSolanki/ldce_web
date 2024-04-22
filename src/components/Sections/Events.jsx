@@ -1,4 +1,3 @@
-import React from 'react'
 import event from "../assets/event.jpg"
 
 export default function Events() {
@@ -10,7 +9,7 @@ export default function Events() {
                     <h3 className='text-3xl md:text-4xl text-red-600 font-semibold h-full mb-0'>EVENTS</h3>
                     <button className='flex items-center justify-center bg-red-600 hover:bg-red-800 w-24 text-sm md:w-24 px-1 h-7 rounded text-white mb-1'>
                         All Events
-                        <span class="material-symbols-outlined text-sm ps-1">
+                        <span className="material-symbols-outlined text-sm ps-1">
                             arrow_forward_ios
                         </span></button>
                 </div>

@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function Important() {
     return (
         <div className='flex flex-col items-center sm:flex-row sm:items-start sm:justify-center gap-4' >
@@ -17,7 +15,7 @@ export default function Important() {
                     </p>
                 </div>
                 <button className='bg-red-600 hover:bg-red-800 p-1 w-26 rounded float-end text-white'>More
-                    <span class="material-symbols-outlined text-sm ps-1">
+                    <span className="material-symbols-outlined text-sm ps-1">
                         arrow_forward_ios
                     </span></button>
             </div>
@@ -30,7 +28,7 @@ export default function Important() {
                     in various fields of engineering & technology.
                 </p>
                 <button className='bg-red-600 w-26 hover:bg-red-800 p-1 rounded float-end text-white'>Read More
-                    <span class="material-symbols-outlined text-sm ps-1">
+                    <span className="material-symbols-outlined text-sm ps-1">
                         arrow_forward_ios
                     </span>
                 </button>
