@@ -1,5 +1,7 @@
 import { NAV_ITEMS } from "../../data/Navbar";
 import logo from "/Hero-Images/ldce-logo.png";
+import "./navbar.css";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
   function handleClick() {
@@ -7,9 +9,34 @@ export default function Navbar() {
     div.classList.toggle("hidden");
     div.classList.toggle("flex");
   }
+
+  const [stickyClass, setStickyClass] = useState("relative");
+
+  useEffect(() => {
+    window.addEventListener("scroll", stickNavbar);
+
+    return () => {
+      window.removeEventListener("scroll", stickNavbar);
+    };
+  }, []);
+
+  const stickNavbar = () => {
+    if (window !== undefined) {
+      let windowHeight = window.scrollY;
+      windowHeight > 150
+        ? setStickyClass(
+            "fixed top-0 z-50 mt-[1rem] bg-gray-900/70 px-[10px] py-[15px] rounded-full"
+          )
+        : setStickyClass("relative");
+    }
+  };
   return (
-    <div className="w-3/4 mx-auto mt-[1rem]">
-      <ul className="hidden lg:flex flex-row gap-x-[2rem] justify-between">
+    <>
+
+    <div className={`w-3/4 flex justify-center mx-auto mt-[1rem]`} id="NavBar">
+      <ul
+        className={`hidden lg:flex flex-row gap-x-[2rem] justify-between ${stickyClass} transition-all`}
+        >
         {NAV_ITEMS.map((item, index) => (
           <li key={item.id} className={`text-bold text-white`}>
             <a
@@ -26,6 +53,7 @@ export default function Navbar() {
           </li>
         ))}
       </ul>
+    </div>
       <div
         className="flex lg:hidden justify-between items-center myMain"
         onClick={handleClick}
@@ -72,6 +100,6 @@ export default function Navbar() {
           ))}
         </ul>
       </div>
-    </div>
+      </>
   );
 }
