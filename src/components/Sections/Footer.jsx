@@ -1,4 +1,5 @@
-import g8 from "../assets/g8.jpeg"
+import g8 from "../../assets/g8.jpeg"
+
 
 
 export default function Footer() {
