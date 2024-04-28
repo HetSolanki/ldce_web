@@ -1,5 +1,4 @@
-import g8 from "../../assets/g8.jpeg"
-
+import { g8, facebook, linked, youtube, twitter, instagram } from "../../assets/supply"
 
 
 export default function Footer() {
@@ -8,35 +7,38 @@ export default function Footer() {
             <div className='w-4/5 flex flex-wrap justify-center gap-16 mx-auto pt-4'>
                 <div className='w-56 h-5/6 flex flex-col gap-1'>
                     <p className='text-2xl font-semibold border-gray border-b-2 mb-4'>Quick Links</p>
-                    <a href="#" className='text-gray-500 hover:text-white'>CAMPUS MAP</a>
-                    <a href="#" className='text-gray-500 hover:text-white'>USEFUL LINKS</a>
-                    <a href="#" className='text-gray-500 hover:text-white'>HDFC ONLINE PAYMENT</a>
-                    <a href="#" className='text-gray-500 hover:text-white'>STUDENT INDUCTION</a>
-                    <a href="#" className='text-gray-500 hover:text-white'>PROGRAM</a>
-                    <a href="#" className='text-gray-500 hover:text-white'>TEAM</a>
-                    <a href="#" className='text-gray-500 hover:text-white'>AICTE FEEDBACK</a>
+                    <a href="#" className='text-gray-500 hover:text-white transition duration-200 ease-in-out'>CAMPUS MAP</a>
+                    <a href="#" className='text-gray-500 hover:text-white transition duration-200 ease-in-out'>USEFUL LINKS</a>
+                    <a href="#" className='text-gray-500 hover:text-white transition duration-200 ease-in-out'>HDFC ONLINE PAYMENT</a>
+                    <a href="#" className='text-gray-500 hover:text-white transition duration-200 ease-in-out'>STUDENT INDUCTION</a>
+                    <a href="#" className='text-gray-500 hover:text-white transition duration-200 ease-in-out'>PROGRAM</a>
+                    <a href="#" className='text-gray-500 hover:text-white transition duration-200 ease-in-out'>TEAM</a>
+                    <a href="#" className='text-gray-500 hover:text-white transition duration-200 ease-in-out'>AICTE FEEDBACK</a>
                 </div>
                 <div className='w-56 h-5/6 flex flex-col gap-1'>
                     <p className='text-2xl font-semibold border-gray border-b-2 mb-4'>About</p>
-                    <a href="#" className='text-gray-500 hover:text-white'>History</a>
-                    <a href="#" className='text-gray-500 hover:text-white'>ADMISSION PROCEDURE</a>
-                    <a href="#" className='text-gray-500 hover:text-white'>DIRECTIONS</a>
-                    <a href="#" className='text-gray-500 hover:text-white'>FEES &amp; DESCRIPTION</a>
-                    <a href="#" className='text-gray-500 hover:text-white'>COMMITIES</a>
+                    <a href="#" className='text-gray-500 hover:text-white transition duration-200 ease-in-out'>History</a>
+                    <a href="#" className='text-gray-500 hover:text-white transition duration-200 ease-in-out'>ADMISSION PROCEDURE</a>
+                    <a href="#" className='text-gray-500 hover:text-white transition duration-200 ease-in-out'>DIRECTIONS</a>
+                    <a href="#" className='text-gray-500 hover:text-white transition duration-200 ease-in-out'>FEES &amp; DESCRIPTION</a>
+                    <a href="#" className='text-gray-500 hover:text-white transition duration-200 ease-in-out'>COMMITIES</a>
                 </div>
                 <div className='w-56 h-5/6 flex flex-col gap-1'>
                     <p className='text-2xl font-semibold border-gray border-b-2 mb-4'>Important Info</p>
-                    <a href="" className='text-gray-500 hover:text-white'>RIGHT TO INFO. ACT</a>
-                    <a href="" className='text-gray-500 hover:text-white'>MOU</a>
-                    <a href="" className='text-gray-500 hover:text-white'>TEQIP</a>
-                    <a href="" className='text-gray-500 hover:text-white'>MANDATORY DISCLOSURE</a>
-                    <a href="" className='text-gray-500 hover:text-white'>TENDER NOTICE</a>
+                    <a href="" className='text-gray-500 hover:text-white transition duration-200 ease-in-out'>RIGHT TO INFO. ACT</a>
+                    <a href="" className='text-gray-500 hover:text-white transition duration-200 ease-in-out'>MOU</a>
+                    <a href="" className='text-gray-500 hover:text-white transition duration-200 ease-in-out'>TEQIP</a>
+                    <a href="" className='text-gray-500 hover:text-white transition duration-200 ease-in-out'>MANDATORY DISCLOSURE</a>
+                    <a href="" className='text-gray-500 hover:text-white transition duration-200 ease-in-out'>TENDER NOTICE</a>
                 </div>
                 <div className='w-56 h-5/6 flex flex-col'>
                     <p className='font-semibold mb-3'>L.D. College of Engineering Opp Gujarat University, Navrangpura, Ahmedabad - 380015. GUJARAT INDIA</p>
-                    <div>
-                        <p>Phone No: 079 2630 2887</p>
-                        <p>Email:ldce-abad-dte@gujarat.gov.in</p>
+                    <div className="flex items-center gap-3">
+                        <a href="#" className="w-10 h-full"><img className="w-full h-full" src={facebook} alt="youtube" /></a>
+                        <a href="#" className="w-10 h-full"><img className="w-full h-full" src={linked} alt="youtube" /></a>
+                        <a href="#" className="w-16 h-full"><img className="w-full h-full" src={youtube} alt="youtube" /></a>
+                        <a href="#" className="w-10 h-full"><img className="w-full h-full" src={instagram} alt="instagram" /></a>
+                        <a href="#" className="w-10 h-full"><img className="w-full h-full" src={twitter} alt="twitter" /></a>
                     </div>
                 </div>
             </div>

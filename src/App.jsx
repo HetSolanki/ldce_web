@@ -6,6 +6,8 @@ import LatestNews from "./components/Sections/LatestNews";
 import Events from "./components/Sections/Events";
 import PlacementAndGallery from "./components/Sections/PlacementAndGallery";
 import Footer from "./components/Sections/Footer";
+import Numbers from "./components/Sections/Numbers";
+import CampusLife from "./components/Sections/CampusLife";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <AcademicUnit />
       <LatestNews />
       <Events />
+      <Numbers />
+      <CampusLife />
       <PlacementAndGallery />
       <Footer />
     </>
