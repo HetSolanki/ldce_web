@@ -3,8 +3,8 @@ export default function HomeCard({ imgUrl, title, bgColor }) {
     <div
       className={
         bgColor
-          ? `bg-sky-950 lg:w-[13rem] lg:h-[12rem] sm:w-[10rem] sm:h-[9rem] w-[7rem] h-[6rem] text-white flex flex-col justify-center items-center p-[5px]`
-          : "bg-white lg:w-[13rem] lg:h-[12rem] sm:w-[10rem] sm:h-[9rem] flex flex-col justify-center items-center w-[7rem] h-[6rem] p-[5px]"
+          ? `bg-sky-950 hover:scale-90 transition-all sm:w-[10rem] sm:h-[9rem] w-[7rem] h-[6rem] text-white flex flex-col justify-center items-center p-[5px]`
+          : "bg-white sm:w-[10rem] sm:h-[9rem] flex hover:scale-90 transition-all flex-col justify-center items-center w-[7rem] h-[6rem] p-[5px]"
       }
     >
       <img
@@ -12,7 +12,7 @@ export default function HomeCard({ imgUrl, title, bgColor }) {
         alt={title}
         height={"50px"}
         width={"50px"}
-        className="sm:w-[70px] sm:h-[70px] md:w-[100px] md:h-[100px]"
+        className="sm:w-[70px] sm:h-[70px]"
       />
       <h1 className="font-semibold text-md sm:text-2xl">{title}</h1>
     </div>

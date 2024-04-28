@@ -2,6 +2,7 @@ import { NAV_ITEMS } from "../../data/Navbar";
 import logo from "/Hero-Images/ldce-logo.png";
 import "./navbar.css";
 import { useEffect, useState } from "react";
+// import "./nav.js";
 
 export default function Navbar() {
   function handleClick() {
@@ -21,39 +22,96 @@ export default function Navbar() {
   }, []);
 
   const stickNavbar = () => {
+    // dropdown.classList.toggle("mt-[.5rem]");
     if (window !== undefined) {
       let windowHeight = window.scrollY;
+
       windowHeight > 150
         ? setStickyClass(
-            "fixed top-0 z-50 mt-[1rem] bg-gray-900/70 px-[10px] py-[15px] rounded-full"
+            "fixed top-0 z-50 mt-[1rem] bg-gray-900/70 px-[10px] py-[15px] rounded-full pl-[2rem] pr-[2rem]"
           )
         : setStickyClass("relative");
     }
   };
+
+  const handleAdd = (e) => {
+    const dropdown = e.currentTarget.dataset.dropdown;
+    const dropSelect = document.querySelector(`#dropdown${dropdown}`);
+    dropSelect.classList.add("active");
+  };
+
+  const handleRemove = (e) => {
+    const dropdown = e.currentTarget.dataset.dropdown;
+    const dropSelect = document.querySelector(`#dropdown${dropdown}`);
+    dropSelect.classList.remove("active");
+  };
   return (
     <>
-
-    <div className={`w-3/4 flex justify-center mx-auto mt-[1rem]`} id="NavBar">
-      <ul
-        className={`hidden lg:flex flex-row gap-x-[2rem] justify-between ${stickyClass} transition-all`}
+      <div
+        className={`w-3/4 flex justify-center mx-auto mt-[1rem]`}
+        id="NavBar"
+      >
+        <ul
+          className={`hidden lg:flex flex-row gap-x-[2rem] justify-between ${stickyClass} transition-all`}
         >
-        {NAV_ITEMS.map((item, index) => (
-          <li key={item.id} className={`text-bold text-white`}>
-            <a
-              href={item.link}
-              data-index={index}
-              className={
-                window.location.pathname === item.link
-                  ? `text-orange-400 text-[20px]`
-                  : `text-white text-[20px]`
-              }
+          {NAV_ITEMS.map((item, index) => (
+            <li
+              key={item.id}
+              className={`text-bold text-white`}
+              onMouseEnter={(e) => handleAdd(e)}
+              onMouseLeave={(e) => handleRemove(e)}
+              data-dropdown={index}
             >
-              {item.name}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
+              <a
+                href={item.link}
+                data-index={index}
+                className={
+                  window.location.pathname === item.link
+                    ? `text-orange-500 font-semibold text-[20px] hover:font-semibold transition-all border-solid border-b-2 border-orange-400/50 pb-[5px]`
+                    : `text-white text-[20px] hover:text-orange-300 transition-all`
+                }
+              >
+                {item.subMenu ? (
+                  <>
+                    {item.name} &darr;
+                    <div
+                      id={`dropdown${index}`}
+                      className="dropdown bg-white mt-[1rem]"
+                    >
+                      {item.subItems.map((item) => (
+                        <>
+                          <div className="flex flex-col justify-center hover:border-[1px] transition-all hover:rounded-b-lg hover:border-orange-600">
+                            <span className="dropdown-link-title text-white text-center w-full bg-black px-[1rem] py-1">
+                              {item.heading}
+                            </span>
+                            <ul role="menu" className="mt-[1rem] p-[10px]">
+                              {item.items.map((item) => (
+                                <li role="menuitem" key="index" className="">
+                                  <a
+                                    className="dropdown-link text-black text-lg mt-0  hover:text-orange-400 "
+                                    href={item.link}
+                                  >
+                                    {item.subname}
+                                  </a>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </>
+                      ))}
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    {item.name}
+                    <i className="bx bx-chevron-down" aria-hidden="true"></i>
+                  </>
+                )}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
       <div
         className="flex lg:hidden justify-between items-center myMain"
         onClick={handleClick}
@@ -100,6 +158,6 @@ export default function Navbar() {
           ))}
         </ul>
       </div>
-      </>
+    </>
   );
 }

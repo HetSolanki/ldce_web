@@ -8,6 +8,14 @@ export default function HeroSection() {
   const images = ["/Hero-Images/LDCE3.png", "/Hero-Images/student.jpg"];
   const [bg, setBg] = useState(0);
 
+  setTimeout(() => {
+    if (bg == images.length - 1) {
+      setBg(0);
+    } else {
+      setBg(bg + 1);
+    }
+  }, 5000);
+
   function handleNext() {
     if (bg == images.length - 1) {
       setBg(0);
@@ -25,7 +33,7 @@ export default function HeroSection() {
   return (
     <>
       <div
-        className=""
+        className="transition-all duration-[800ms]"
         style={{
           backgroundImage: `url(${images[bg]})`,
           backgroundSize: "cover",
