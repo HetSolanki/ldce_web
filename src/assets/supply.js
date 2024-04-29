@@ -17,9 +17,27 @@ import campus2 from "./campus2.jpg";
 import campus3 from "./campus3.jpg";
 import campus4 from "./campus4.jpeg";
 import campus5 from "./campus5.png";
+import logo from "/Hero-Images/ldce-logo.png";
 
-
-
-
-
-export { g1, g2, g3, g4, g5, g6, g7, g8, g9, facebook, linked, youtube, twitter, instagram, campus1, campus2, campus3, campus4, campus5};
+export {
+  g1,
+  g2,
+  g3,
+  g4,
+  g5,
+  g6,
+  g7,
+  g8,
+  g9,
+  facebook,
+  linked,
+  youtube,
+  twitter,
+  instagram,
+  campus1,
+  campus2,
+  campus3,
+  campus4,
+  campus5,
+  logo,
+};

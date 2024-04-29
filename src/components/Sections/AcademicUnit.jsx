@@ -5,7 +5,7 @@ import medal from "../../assets/medal.png";
 
 export default function AcademicUnit() {
     return (
-        <div className='flex bg-blue-100 justify-center py-16'>
+        <div className='flex bg-blue-100 justify-center py-[2.5rem]'>
             <div className='bg-blue-100 w-11/12 md:w-4/5'>
                 <h3 className='text-3xl font-semibold mb-10 text-center'>ACADEMIC UNITS</h3>
 

@@ -73,10 +73,17 @@ export default function Navbar() {
               >
                 {item.subMenu ? (
                   <>
-                    {item.name} &darr;
+                    <div className="flex gap-x-[10px] px-[5px] items-center">
+                      <span>{item.name}</span>
+                      <img
+                        src="https://img.icons8.com/ios/50/expand-arrow--v1.png"
+                        alt="expand-arrow--v1"
+                        className="invert h-[20px] w-[20px]"
+                      />
+                    </div>
                     <div
                       id={`dropdown${index}`}
-                      className="dropdown bg-white mt-[1rem]"
+                      className="dropdown bg-white/90 mt-[1rem]"
                     >
                       {item.subItems.map((item) => (
                         <>
@@ -88,7 +95,7 @@ export default function Navbar() {
                               {item.items.map((item) => (
                                 <li role="menuitem" key="index" className="">
                                   <a
-                                    className="dropdown-link text-black text-lg mt-0  hover:text-orange-400 "
+                                    className="dropdown-link text-black text-lg mt-0  hover:text-orange-600 "
                                     href={item.link}
                                   >
                                     {item.subname}

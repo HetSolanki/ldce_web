@@ -10,9 +10,9 @@ export default function Header() {
         <a href="#">STUDENT SECTION |</a>
         <a href="#">CONTACT</a>
       </div>
-      <div className="hidden lg:flex gap-x-[1rem] justify-center lg:justify-start items-center w-[62%] mx-auto mt-[2rem]">
-        <img src={logo} alt="LDCE" width={"70px"} height={"70px"} />
-        <h1 className="font-semibold text-xl sm:text-3xl mt-[5px] text-white">
+      <div className="hidden lg:flex gap-x-[1rem] justify-center lg:justify-start items-center w-4/6 mx-auto mt-[2rem]">
+        <img src={logo} alt="LDCE" width={"50px"} height={"50px"} />
+        <h1 className="font-semibold text-xl sm:text-2xl mt-[5px] text-white">
           L.D. College of Engineering
         </h1>
       </div>
