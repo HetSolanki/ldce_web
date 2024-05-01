@@ -4,17 +4,17 @@ export default function Important() {
             <div className='w-full sm:w-5/12 p-4'>
                 <h3 className='text-3xl text-red-600 font-semibold mb-2'>Important Announcement</h3>
                 <div className='w-ful mb-5'>
-                    <p className='mb-2 border-b-2 border-red-600 font-medium'>
-                        {"->"} Two B.E. programs- Rubber Technology and Computer Engineering accredited by NBA for three years
+                    <p className='mb-2 cursor-pointer py-2 px-1 transition duration-300 ease-in-out hover:bg-red-300 font-medium text-lg'>
+                        &rarr; Two B.E. programs- Rubber Technology and Computer Engineering accredited by NBA for three years
                     </p>
-                    <p className='mb-2 border-b-2 border-red-600 font-medium'>
-                        {"->"} B.E. programs- Rubber Technology and Computer Engineering accredited by NBA for three years
+                    <p className='mb-2 cursor-pointer py-2 px-1 transition duration-300 ease-in-out hover:bg-red-300 font-medium text-lg'>
+                        &rarr; Two B.E. programs- Rubber Technology and Computer Engineering accredited by NBA for three years
                     </p>
-                    <p className='mb-2 border-b-2 border-red-600 font-medium'>
-                        {"->"} B.E. programs- Rubber Technology and Computer Engineering accredited by NBA for three years
+                    <p className='mb-2 cursor-pointer py-2 px-1 transition duration-300 ease-in-out hover:bg-red-300 font-medium text-lg'>
+                        &rarr; Two B.E. programs- Rubber Technology and Computer Engineering accredited by NBA for three years
                     </p>
                 </div>
-                <button className='bg-red-600 hover:bg-red-800 p-1 w-26 rounded float-end text-white'>More &gt;</button>                
+                <button className='bg-red-600 hover:bg-red-800 p-1 w-26 rounded float-end text-white'>More &gt;</button>
             </div>
             <div className='w-full sm:w-5/12 p-4'>
                 <h3 className='text-3xl font-semibold mb-2 text-red-600'>About LDCE</h3>
