@@ -7,8 +7,12 @@ import { useEffect, useState } from "react";
 export default function Navbar() {
   function handleClick() {
     const div = document.querySelector(".myClass");
+    const div2 = document.querySelector(".myNavContainer");
+
     div.classList.toggle("hidden");
     div.classList.toggle("flex");
+    div2.classList.remove("-left-[100%]");
+    div2.classList.add("left-0");
   }
 
   const [stickyClass, setStickyClass] = useState("relative");
@@ -119,17 +123,13 @@ export default function Navbar() {
           ))}
         </ul>
       </div>
-      <div
-        className="flex lg:hidden justify-between items-center myMain"
-        onClick={handleClick}
-      >
+      <div className="flex mx-auto w-5/6 lg:hidden justify-between items-center myMain">
         <div className="flex gap-x-[2px] items-center">
           <img
             src={logo}
             alt="LDCE"
             width={"40px"}
             height={"40px"}
-            onClick={handleClick}
             className="text-center sm:w-[50px] sm:h-[50px]"
           />
           <h1 className="font-semibold max-[320px]:text-sm sm:text-3xl text-white">
@@ -143,10 +143,11 @@ export default function Navbar() {
             src="https://img.icons8.com/ios/50/menu--v1.png"
             alt="menu--v1"
             className="invert"
+            onClick={handleClick}
           />
         </div>
       </div>
-      <div className="mt-[2rem] transition-all myNavContainer">
+      <div className="mt-[2rem] transition myNavContainer w-full absolute -left-[100%]">
         <ul className="flex-col gap-x-[2rem] justify-center hidden lg:hidden myClass text-center">
           {NAV_ITEMS.map((item, index) => (
             <li key={item.id} className={`text-bold text-white`}>
