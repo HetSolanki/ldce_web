@@ -21,25 +21,25 @@ export default function PlacementAndGallery() {
   };
 
   return (
-    <div className="w-full px-5 py-[1rem]">
+    <div className="w-full px-5 py-[1rem] pt-[2rem]">
       <div className="flex flex-col lg:flex-row justify-between gap-4 w-full mx-auto">
         <div className="w-full lg:w-2/4 sm:p-4">
-          <h3 className="text-3xl text-red-600 font-semibold mb-4">
+          <h3 className="text-[26px] sm:text-3xl text-red-600 font-semibold mb-4">
             PLACEMENTS
           </h3>
-          <div className="w-full mb-5">
-            <p className="flex items-center mb-2 py-3 transition duration-300 ease-in-out hover:bg-red-300 text-lg sm:text-xl md:text-2xl font-medium cursor-pointer">
+          <div className="w-full mb-3 sm:mb-5">
+            <p className="flex items-center py-3 transition duration-300 ease-in-out hover:bg-red-300 text-lg sm:text-xl md:text-2xl font-medium cursor-pointer">
               &rarr; Placement Cell Brochure
             </p>
-            <p className="flex items-center mb-2 py-3 transition duration-300 ease-in-out hover:bg-red-300 text-lg sm:text-xl md:text-2xl font-medium cursor-pointer">
+            <p className="flex items-center py-3 transition duration-300 ease-in-out hover:bg-red-300 text-lg sm:text-xl md:text-2xl font-medium cursor-pointer">
               &rarr; Placement Cell Activities
             </p>
-            <p className="flex items-center mb-2 py-3 transition duration-300 ease-in-out hover:bg-red-300 text-lg sm:text-xl md:text-2xl font-medium cursor-pointer">
+            <p className="flex items-center py-3 transition duration-300 ease-in-out hover:bg-red-300 text-lg sm:text-xl md:text-2xl font-medium cursor-pointer">
               &rarr; Facilities For Placement Drive at LDCE
             </p>
           </div>
-          <button className="flex items-center bg-red-600 hover:bg-red-800 py-1 px-5 rounded float-end text-white">
-            More &gt;
+          <button className="flex items-center bg-red-600 hover:bg-red-800 py-1 px-5 rounded text-white font-medium">
+            More &rarr;
           </button>
         </div>
 
@@ -51,7 +51,11 @@ export default function PlacementAndGallery() {
           <div className="w-full h-full grid grid-cols-3 grid-rows-3 gap-4">
             <div className="relative bg-blue-500 w-full h-36 sm:h-44 lg:h-32 md:h-56 overflow-hidden cursor-pointer">
               <img src={g1} className="object-cover w-full h-full" />
-              <div onClick={() => handleImg(g1)} style={{ background: 'rgba(0,0,0,0.6)' }} className="absolute inset-0 opacity-100 sm:opacity-0 transition-opacity duration-200 ease-out hover:opacity-100 flex items-center justify-center">
+              <div
+                onClick={() => handleImg(g1)}
+                style={{ background: "rgba(0,0,0,0.6)" }}
+                className="absolute inset-0 opacity-0 transition-opacity duration-200 ease-out hover:opacity-100 flex items-center justify-center"
+              >
                 <span className="material-symbols-outlined text-white">
                   zoom_in
                 </span>
@@ -59,7 +63,11 @@ export default function PlacementAndGallery() {
             </div>
             <div className="relative bg-blue-500 w-full h-36 sm:h-44 lg:h-32 md:h-56 overflow-hidden cursor-pointer">
               <img src={g2} className="object-cover w-full h-full" />
-              <div onClick={() => handleImg(g2)} style={{ background: 'rgba(0,0,0,0.6)' }} className="absolute inset-0 opacity-100 sm:opacity-0 transition-opacity duration-200 ease-out hover:opacity-100 flex items-center justify-center">
+              <div
+                onClick={() => handleImg(g2)}
+                style={{ background: "rgba(0,0,0,0.6)" }}
+                className="absolute inset-0 opacity-0 transition-opacity duration-200 ease-out hover:opacity-100 flex items-center justify-center"
+              >
                 <span className="material-symbols-outlined text-white">
                   zoom_in
                 </span>
@@ -67,7 +75,11 @@ export default function PlacementAndGallery() {
             </div>
             <div className="relative bg-blue-500 w-full h-36 sm:h-44 lg:h-32 md:h-56 overflow-hidden cursor-pointer">
               <img src={g3} className="object-cover w-full h-full" />
-              <div onClick={() => handleImg(g3)} style={{ background: 'rgba(0,0,0,0.6)' }} className="absolute inset-0 opacity-100 sm:opacity-0 transition-opacity duration-200 ease-out hover:opacity-100 flex items-center justify-center">
+              <div
+                onClick={() => handleImg(g3)}
+                style={{ background: "rgba(0,0,0,0.6)" }}
+                className="absolute inset-0 opacity-0 transition-opacity duration-200 ease-out hover:opacity-100 flex items-center justify-center"
+              >
                 <span className="material-symbols-outlined text-white">
                   zoom_in
                 </span>
@@ -75,7 +87,11 @@ export default function PlacementAndGallery() {
             </div>
             <div className="relative bg-blue-500 w-full h-36 sm:h-44 lg:h-32 md:h-56 overflow-hidden cursor-pointer">
               <img src={g4} className="object-cover w-full h-full" />
-              <div onClick={() => handleImg(g4)} style={{ background: 'rgba(0,0,0,0.6)' }} className="absolute inset-0 opacity-100 sm:opacity-0 transition-opacity duration-200 ease-out hover:opacity-100 flex items-center justify-center">
+              <div
+                onClick={() => handleImg(g4)}
+                style={{ background: "rgba(0,0,0,0.6)" }}
+                className="absolute inset-0 opacity-0 transition-opacity duration-200 ease-out hover:opacity-100 flex items-center justify-center"
+              >
                 <span className="material-symbols-outlined text-white">
                   zoom_in
                 </span>
@@ -83,7 +99,11 @@ export default function PlacementAndGallery() {
             </div>
             <div className="relative bg-blue-500 w-full h-36 sm:h-44 lg:h-32 md:h-56 overflow-hidden cursor-pointer">
               <img src={g5} className="object-cover w-full h-full" />
-              <div onClick={() => handleImg(g5)} style={{ background: 'rgba(0,0,0,0.6)' }} className="absolute inset-0 opacity-100 sm:opacity-0 transition-opacity duration-200 ease-out hover:opacity-100 flex items-center justify-center">
+              <div
+                onClick={() => handleImg(g5)}
+                style={{ background: "rgba(0,0,0,0.6)" }}
+                className="absolute inset-0 opacity-0 transition-opacity duration-200 ease-out hover:opacity-100 flex items-center justify-center"
+              >
                 <span className="material-symbols-outlined text-white">
                   zoom_in
                 </span>
@@ -91,7 +111,11 @@ export default function PlacementAndGallery() {
             </div>
             <div className="relative bg-blue-500 w-full h-36 sm:h-44 lg:h-32 md:h-56 overflow-hidden cursor-pointer">
               <img src={g6} className="object-cover w-full h-full" />
-              <div onClick={() => handleImg(g6)} style={{ background: 'rgba(0,0,0,0.6)' }} className="absolute inset-0 opacity-100 sm:opacity-0 transition-opacity duration-200 ease-out hover:opacity-100 flex items-center justify-center">
+              <div
+                onClick={() => handleImg(g6)}
+                style={{ background: "rgba(0,0,0,0.6)" }}
+                className="absolute inset-0 opacity-0 transition-opacity duration-200 ease-out hover:opacity-100 flex items-center justify-center"
+              >
                 <span className="material-symbols-outlined text-white">
                   zoom_in
                 </span>
@@ -99,7 +123,11 @@ export default function PlacementAndGallery() {
             </div>
             <div className="relative bg-blue-500 w-full h-36 sm:h-44 lg:h-32 md:h-56 overflow-hidden cursor-pointer">
               <img src={g7} className="object-cover w-full h-full" />
-              <div onClick={() => handleImg(g7)} style={{ background: 'rgba(0,0,0,0.6)' }} className="absolute inset-0 opacity-100 sm:opacity-0 transition-opacity duration-200 ease-out hover:opacity-100 flex items-center justify-center">
+              <div
+                onClick={() => handleImg(g7)}
+                style={{ background: "rgba(0,0,0,0.6)" }}
+                className="absolute inset-0 opacity-0 transition-opacity duration-200 ease-out hover:opacity-100 flex items-center justify-center"
+              >
                 <span className="material-symbols-outlined text-white">
                   zoom_in
                 </span>
@@ -107,7 +135,11 @@ export default function PlacementAndGallery() {
             </div>
             <div className="relative bg-blue-500 w-full h-36 sm:h-44 lg:h-32 md:h-56 overflow-hidden cursor-pointer">
               <img src={g8} className="object-cover w-full h-full" />
-              <div onClick={() => handleImg(g8)} style={{ background: 'rgba(0,0,0,0.6)' }} className="absolute inset-0 opacity-100 sm:opacity-0 transition-opacity duration-200 ease-out hover:opacity-100 flex items-center justify-center">
+              <div
+                onClick={() => handleImg(g8)}
+                style={{ background: "rgba(0,0,0,0.6)" }}
+                className="absolute inset-0 opacity-0 transition-opacity duration-200 ease-out hover:opacity-100 flex items-center justify-center"
+              >
                 <span className="material-symbols-outlined text-white">
                   zoom_in
                 </span>
@@ -115,7 +147,11 @@ export default function PlacementAndGallery() {
             </div>
             <div className="relative bg-blue-500 w-full h-36 sm:h-44 lg:h-32 md:h-56 overflow-hidden cursor-pointer">
               <img src={g9} className="object-cover w-full h-full" />
-              <div onClick={() => handleImg(g9)} style={{ background: 'rgba(0,0,0,0.6)' }} className="absolute inset-0 opacity-100 sm:opacity-0 transition-opacity duration-200 ease-out hover:opacity-100 flex items-center justify-center">
+              <div
+                onClick={() => handleImg(g9)}
+                style={{ background: "rgba(0,0,0,0.6)" }}
+                className="absolute inset-0 opacity-0 transition-opacity duration-200 ease-out hover:opacity-100 flex items-center justify-center"
+              >
                 <span className="material-symbols-outlined text-white">
                   zoom_in
                 </span>
@@ -147,7 +183,7 @@ export default function PlacementAndGallery() {
                       onClick={handleClose}
                       className="relative float-end text-3xl font-bold text-white"
                     >
-                      <span class="material-symbols-outlined text-3xl">
+                      <span className="material-symbols-outlined text-3xl">
                         close
                       </span>
                     </button>
@@ -158,6 +194,6 @@ export default function PlacementAndGallery() {
           </div>
         </div>
       </div>
-    </div >
+    </div>
   );
 }

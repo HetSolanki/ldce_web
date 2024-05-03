@@ -17,6 +17,7 @@ function App() {
       <AcademicUnit />
       <LatestNews />
       <Events />
+      {/* <EventPre /> */}
       <Numbers />
       <CampusLife />
       <PlacementAndGallery />

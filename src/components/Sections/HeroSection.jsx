@@ -69,7 +69,7 @@ export default function HeroSection() {
             />
           </button>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 absolute -bottom-[5.5rem] sm:-bottom-[15rem] md:-bottom-[12rem] lg:bottom-0 mx-auto w-3/4 md:w-11/12 justify-center">
+          {/* <div className="grid grid-cols-2 lg:grid-cols-4 absolute -bottom-[5.5rem] sm:-bottom-[15rem] md:-bottom-[12rem] lg:bottom-0 mx-auto w-3/4 md:w-11/12 justify-center">
             <HomeCard imgUrl={"/Hero-Images/news.png"} title={"News"} />
             <HomeCard
               imgUrl={"/Hero-Images/startup.png"}
@@ -85,7 +85,7 @@ export default function HeroSection() {
               title={"Event"}
               bgColor={true}
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </>

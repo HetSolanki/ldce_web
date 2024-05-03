@@ -14,7 +14,7 @@ export default function Footer() {
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${g8})`,
       }}
-      className="w-full bg-no-repeat bg-center bg-cover text-white"
+      className="w-full bg-no-repeat bg-center bg-cover text-white mt-[1rem] p-[1rem]"
     >
       <div className="w-4/5 flex flex-wrap justify-center gap-16 mx-auto pt-[2rem]">
         <div className="w-56 h-5/6 flex flex-col gap-1">

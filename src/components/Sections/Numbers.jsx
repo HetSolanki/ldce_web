@@ -53,28 +53,42 @@ export default function Numbers() {
       >
         <div className="flex flex-col items-center">
           <div className="flex justify-center">
-            <p className="text-5xl text-center mb-2" id="value1" ref={obj}>
+            <p
+              className="text-5xl sm:text-[4rem] xl:text-[5rem] font-bold text-center mb-2"
+              id="value1"
+              ref={obj}
+            >
               10000
             </p>
-            <span className="text-5xl">+</span>
+            <span className="text-5xl sm:text-[4rem] xl:text-[5rem]">
+              +
+            </span>
           </div>
           <p className="text-l justify-self-center pr-[20px]">STUDENTS</p>
         </div>
         <div className="flex flex-col items-center">
           <div className="flex justify-center">
-            <p className="text-5xl text-center mb-2" id="value2" ref={obj1}>
+            <p
+              className="text-5xl sm:text-[4rem] xl:text-[5rem] font-bold text-center mb-2"
+              id="value2"
+              ref={obj1}
+            >
               1000
             </p>
-            <span className="text-5xl">+</span>
+            <span className="text-5xl sm:text-[4rem] xl:text-[5rem]">+</span>
           </div>
           <p className="text-l justify-self-center pr-[20px]">DEPARTMENT</p>
         </div>
         <div className="flex flex-col items-center">
           <div className="flex justify-center">
-            <p className="text-5xl text-center mb-2" id="value3" ref={obj2}>
+            <p
+              className="text-5xl sm:text-[4rem] xl:text-[5rem] font-bold text-center mb-2"
+              id="value3"
+              ref={obj2}
+            >
               14
             </p>
-            <span className="text-5xl">+</span>
+            <span className="text-5xl sm:text-[4rem] xl:text-[5rem]">+</span>
           </div>
           <p className="text-l justify-self-center pr-[20px]">FACULTY</p>
         </div>
