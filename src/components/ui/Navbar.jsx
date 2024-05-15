@@ -2,7 +2,7 @@ import { NAV_ITEMS } from "../../data/Navbar";
 import logo from "/Hero-Images/ldce-logo.png";
 import "./navbar.css";
 import { useEffect, useState } from "react";
-// import "./nav.js";
+
 
 export default function Navbar() {
   function handleClick() {
@@ -92,10 +92,13 @@ export default function Navbar() {
                       {item.subItems.map((item) => (
                         <>
                           <div className="flex flex-col justify-center hover:border-[1px] transition-all hover:rounded-b-lg hover:border-orange-600">
-                            <span className="dropdown-link-title text-white text-center w-full bg-black px-[1rem] py-1">
+                            <span className="dropdown-link-title text-white text-center w-full bg-red-400 px-[1rem] py-1">
                               {item.heading}
                             </span>
-                            <ul role="menu" className="mt-[1rem] p-[10px]">
+                            <ul
+                              role="menu"
+                              className="mt-[1rem] p-[10px] hover:shadow-md transition-all bg-white/90 rounded-lg"
+                            >
                               {item.items.map((item) => (
                                 <li role="menuitem" key="index" className="">
                                   <a
