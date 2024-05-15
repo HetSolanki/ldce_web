@@ -8,10 +8,23 @@ import PlacementAndGallery from "./components/Sections/PlacementAndGallery";
 import Footer from "./components/Sections/Footer";
 import Numbers from "./components/Sections/Numbers";
 import CampusLife from "./components/Sections/CampusLife";
+import Preloader from "../src/components/preloader";
+import { useState, useEffect } from "react";
 
 function App() {
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(false);
+    }, 3500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
+      {isVisible && <Preloader />}
       <HeroSection />
       <Important />
       <AcademicUnit />
